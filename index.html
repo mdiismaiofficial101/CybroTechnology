@@ -14,33 +14,21 @@
 <title>CybroTechnology — Building Technology That Solves Real Problems</title>
 <style>
 :root{--blue:#1877f2;--blue2:#0b5bd3;--ink:#101828;--muted:#667085;--bg:#f7f9fc;--card:rgba(255,255,255,.78);--line:rgba(16,24,40,.09);--shadow:0 24px 70px rgba(20,50,90,.12)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}
-a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}.nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(247,249,252,.68);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);padding:16px 0}.navin{display:flex;justify-content:space-between;align-items:center}.brand{display:flex;gap:12px;align-items:center;font-size:18px;font-weight:900}.logo{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:linear-gradient(135deg,#1877f2,#0b5bd3);border-radius:8px;color:#fff;font-weight:900;font-size:20px}.dark .logo{background:linear-gradient(135deg,#4a9eff,#1877f2)}.links{display:flex;gap:36px;font-size:14px;font-weight:500}.links a:hover{color:var(--blue)}.actions{display:flex;gap:12px;align-items:center}.iconbtn{background:0;border:0;font-size:18px;cursor:pointer;padding:8px;opacity:.6;transition:opacity .2s}.iconbtn:hover{opacity:1}.menu{display:none}.dark .iconbtn{color:#fff}
-.hero{min-height:100vh;display:grid;place-items:center;padding-top:76px;position:relative;isolation:isolate}.hero:before{content:"";position:absolute;width:620px;height:620px;background:radial-gradient(circle,rgba(24,119,242,.12),transparent);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
-.heroGrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
-.hero h1{font-size:56px;font-weight:900;line-height:1.2;margin:0 0 24px}.gradient{background:linear-gradient(135deg,#1877f2,#0b5bd3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero p{font-size:18px;color:var(--muted);line-height:1.6;margin:0 0 32px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:var(--card);border-radius:24px;font-size:13px;font-weight:600;margin-bottom:16px;backdrop-filter:blur(10px)}.dot{width:8px;height:8px;background:var(--blue);border-radius:50%}
-.btns{display:flex;gap:16px}.btn{display:inline-block;padding:14px 28px;border-radius:8px;font-weight:600;font-size:14px;transition:all .2s;border:2px solid transparent}.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:var(--blue2);transform:translateY(-2px)}.btn{background:var(--card);color:var(--ink)}.btn:hover{background:#fff;border-color:var(--blue)}
-.visual{position:relative;height:500px;display:flex;align-items:center;justify-content:center}.orb{width:320px;height:320px;border-radius:50%;background:linear-gradient(135deg,#1877f2,#0b5bd3);position:relative;animation:float 4s ease-in-out infinite}.orb:after{content:"";position:absolute;inset:-20px;border:2px dashed rgba(24,119,242,.3);border-radius:50%;animation:spin 12s linear infinite}.ring{position:absolute;width:360px;height:360px;border:2px solid rgba(24,119,242,.2);border-radius:50%;animation:orbit 8s linear infinite}.sat{position:absolute;width:12px;height:12px;background:var(--blue);border-radius:50%;top:80px;right:60px;box-shadow:0 0 20px rgba(24,119,242,.5)}.glass{position:absolute;backdrop-filter:blur(10px);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:12px 16px;font-size:12px;font-weight:600;color:var(--ink)}.g1{top:60px;left:40px}.g2{bottom:60px;right:40px}.g3{bottom:40px;left:50%}
-.scroll{text-align:center;margin-top:40px;font-size:12px;font-weight:600;color:var(--muted);animation:float 3s ease-in-out infinite}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden[...]
+a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}.nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(247,249,252,.68);backdrop-filter:blur(18px);bo[...]
+.hero{min-height:100vh;display:grid;place-items:center;padding-top:76px;position:relative;isolation:isolate}.hero:before{content:"";position:absolute;width:620px;height:620px;background:radial-gra[...]
 
-section{padding:110px 0}.sectionHead{max-width:720px;margin-bottom:45px}.kicker{color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:2px;font-size:12px}.sectionHead h2{font-size:42px;font-weight:900;line-height:1.2;margin:12px 0}.sectionHead p{font-size:16px;color:var(--muted);line-height:1.6;margin:0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
-.card{padding:32px;background:var(--card);border-radius:16px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.5);cursor:pointer;transition:all .3s;position:relative}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card .icon{font-size:32px;margin-bottom:12px}.card .num{display:block;font-size:11px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}.card h3{margin:0 0 12px;font-size:18px}.card p{margin:0;font-size:14px;color:var(--muted);line-height:1.6}
-.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.aboutVisual{min-height:430px;border-radius:32px;background:linear-gradient(145deg,#0a4ea9,#1877f2 48%,#9bc8ff);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.core{text-align:center;color:#fff}.core strong{font-size:32px;display:block;margin-bottom:8px}.core span{font-size:14px;opacity:.9;display:block}
+section{padding:110px 0}.sectionHead{max-width:720px;margin-bottom:45px}.kicker{color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:2px;font-size:12px}.sectionHead h2{font-si[...]
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.aboutVisual{min-height:430px;border-radius:32px;background:linear-gradient(145deg,#0a4ea9,#1877f2 48%,#9bc8ff);pos[...]
 
-.timeline{position:relative;max-width:850px;margin:auto}.timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:linear-gradient(#1877f2,transparent)}.event{position:relative;margin-bottom:40px;padding-left:80px}.event small{position:absolute;left:0;top:0;font-size:11px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:1px}.event h3{margin:0 0 8px}.event p{margin:0;font-size:14px;color:var(--muted)}
+.timeline{position:relative;max-width:850px;margin:auto}.timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:linear-gradient(#1877f2,transparent)}.event{posi[...]
 
-.cta{border-radius:32px;padding:70px 8%;background:linear-gradient(120deg,#063b83,#1877f2 55%,#71b0ff);color:#fff;position:relative;overflow:hidden}.cta:after{content:"";position:absolute;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.1),transparent);top:50%;right:-100px;transform:translateY(-50%);border-radius:50%;pointer-events:none}.cta .kicker{color:#d9ebff}.cta h2{margin-top:12px}.cta > *{position:relative;z-index:1}
+.cta{border-radius:32px;padding:70px 8%;background:linear-gradient(120deg,#063b83,#1877f2 55%,#71b0ff);color:#fff;position:relative;overflow:hidden}.cta:after{content:"";position:absolute;width:42[...]
 
-footer{padding:50px 0 35px;border-top:1px solid var(--line)}.foot{display:flex;justify-content:space-between;gap:30px;align-items:center}.foot p{color:var(--muted);font-size:13px}.reveal{opacity:0;transform:translateY(20px);transition:all .6s ease}.reveal.show{opacity:1;transform:translateY(0)}
-
+footer{padding:50px 0 35px;border-top:1px solid var(--line)}.foot{display:flex;justify-content:space-between;gap:30px;align-items:center}.foot p{color:var(--muted);font-size:13px}.reveal{opacity:0[...]
 @keyframes float{50%{transform:translateY(-15px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes orbit{to{transform:rotate(360deg) translateX(160px) rotate(-360deg)}}
-
-@media(max-width:850px){.links{display:none}.menu{display:block}.heroGrid,.about{grid-template-columns:1fr}.visual{height:430px;order:-1}.orb{width:250px;height:250px}.orb:after{width:300px;height:300px}.ring{width:280px;height:280px}.cards{grid-template-columns:1fr}.sectionHead h2{font-size:32px}.hero h1{font-size:42px}}
-
-@media(max-width:520px){section{padding:80px 0}.visual{height:360px}.glass{font-size:11px;padding:11px 13px}.g1{left:0}.g2{right:0}.g3{left:0}.stats{grid-template-columns:1fr}.hero p{font-size:16px}.hero h1{font-size:32px}.sectionHead h2{font-size:26px}.cards{gap:16px}.card{padding:20px}}
-
+@media(max-width:850px){.links{display:none}.menu{display:block}.heroGrid,.about{grid-template-columns:1fr}.visual{height:430px;order:-1}.orb{width:250px;height:250px}.orb:after{width:300px;height[...]
+@media(max-width:520px){section{padding:80px 0}.visual{height:360px}.glass{font-size:11px;padding:11px 13px}.g1{left:0}.g2{right:0}.g3{left:0}.stats{grid-template-columns:1fr}.hero p{font-size:16p[...]
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 <script type="application/ld+json">
@@ -49,8 +37,7 @@ footer{padding:50px 0 35px;border-top:1px solid var(--line)}.foot{display:flex;j
 "@type":"Organization",
 "name":"CybroTechnology",
 "url":"https://cybronetwork.online/",
-"description":"CybroTechnology is a technology company building mobile applications, websites and digital tools to solve real-world problems through research, product development, user feedback and creative problem-solving.",
-"logo":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizWnAXLc5uy7QBB1PNLWPev3myfV7pO7f1HrvJSRjWx_YvkjloNMLhF5UKSabrBc9RGX76q3Y9BKqZMWiCTdj9yr7lqKInPJAbLlcjP1nKyj412G1Fo60JXmW_UoqkI078NibsHgApLKv0Qb3NiYSirxcGB3PQeDZ9jhs-YZshwp2oKLBHRlPsC-8xp8w/w945-h600-p-k-no-nu/companylogo.png",
+"description":"CybroTechnology is a technology company building mobile applications, websites and digital tools to solve real-world problems through research, product development, user feedback an[...]
 "email":"cybrotechnology1@gmail.com",
 "areaServed":["Bangladesh","United States","France","Russia"],
 "sameAs":["https://cybronetwork.online/","https://cybrotools.xyz/","https://t.me/cybrotechnology/1","https://maps.app.goo.gl/s1XdxcAHYJgHZwfcA"],
@@ -70,8 +57,8 @@ footer{padding:50px 0 35px;border-top:1px solid var(--line)}.foot{display:flex;j
 </head>
 <body>
 <header class="nav"><div class="container navin">
-<a class="brand" href="#home"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizWnAXLc5uy7QBB1PNLWPev3myfV7pO7f1HrvJSRjWx_YvkjloNMLhF5UKSabrBc9RGX76q3Y9BKqZMWiCTdj9yr7lqKInPJAbLlcjP1nKyj412G1Fo60JXmW_UoqkI078NibsHgApLKv0Qb3NiYSirxcGB3PQeDZ9jhs-YZshwp2oKLBHRlPsC-8xp8w/w945-h600-p-k-no-nu/companylogo.png" alt="CybroTechnology Logo" style="height: 40px; width: auto;"><span>CybroTechnology</span></a>
-<nav class="links" aria-label="Primary"><a href="#about">About</a><a href="#company">Company</a><a href="#work">What We Do</a><a href="#journey">Journey</a><a href="#vision">Vision</a><a href="#support">Support</a><a href="#contact">Contact</a></nav>
+<a class="brand" href="#home"><span class="logo">C</span><span>CybroTechnology</span></a>
+<nav class="links" aria-label="Primary"><a href="#about">About</a><a href="#company">Company</a><a href="#work">What We Do</a><a href="#journey">Journey</a><a href="#vision">Vision</a><a href="#su[...]
 <div class="actions"><button class="iconbtn" id="theme" aria-label="Toggle dark mode">☾</button><button class="iconbtn menu" id="menu" aria-label="Open menu">☰</button></div>
 </div></header>
 
@@ -81,60 +68,59 @@ footer{padding:50px 0 35px;border-top:1px solid var(--line)}.foot{display:flex;j
 <h1>Building <span class="gradient">technology</span> that solves real problems.</h1>
 <p>CybroTechnology creates useful apps, websites and digital tools by listening to people, understanding real problems and turning ideas into practical products.</p>
 <div class="btns"><a class="btn primary" href="#work">Explore our work →</a><a class="btn" href="#about">Our story</a></div></div>
-<div class="visual reveal" aria-label="Animated 3D-inspired technology visual"><div class="orb"></div><div class="ring"></div><span class="sat"></span><div class="glass g1">APP DEVELOPMENT</div><div class="glass g2">REAL PROBLEMS – REAL SOLUTIONS</div><div class="glass g3">PEOPLE • IDEAS • TECHNOLOGY</div></div>
+<div class="visual reveal" aria-label="Animated 3D-inspired technology visual"><div class="orb"></div><div class="ring"></div><span class="sat"></span><div class="glass g1">APP DEVELOPMENT</div><d[...]
 </div><div class="scroll">SCROLL TO EXPLORE ↓</div></section>
 
 <section id="about"><div class="container about">
 <div class="aboutVisual reveal"><div class="core"><div><strong>CYBRO</strong><span>Technology with purpose</span></div></div></div>
-<div class="reveal"><div class="sectionHead"><span class="kicker">About CybroTechnology</span><h2>We build for people, not just for screens.</h2><p>CybroTechnology is a technology brand focused on solving real problems through useful digital products. We believe the best technology comes from understanding people first, identifying their real needs, and creating practical solutions.</p></div></div>
+<div class="reveal"><div class="sectionHead"><span class="kicker">About CybroTechnology</span><h2>We build for people, not just for screens.</h2><p>CybroTechnology is a technology brand focused on[...]
 </div></section>
 
 <section id="company"><div class="container">
 <div class="sectionHead reveal"><span class="kicker">Company profile</span><h2>A growing technology company with a global presence and long-term ambition.</h2>
-<p>CybroTechnology is building a long-term technology brand around one core idea: identify meaningful problems, understand the people affected by them, and create useful digital products that make a real difference in their lives.</p></div>
+<p>CybroTechnology is building a long-term technology brand around one core idea: identify meaningful problems, understand the people affected by them, and create useful digital products that make[...]
 <div class="cards">
-<article class="card reveal"><div class="icon">◎</div><span class="num">WHO WE ARE</span><h3>Technology with purpose</h3><p>We design and develop mobile applications, websites and digital tools. Everything we create is built on a foundation of solving real problems and delivering measurable value.</p></article>
-<article class="card reveal"><div class="icon">⌘</div><span class="num">HOW WE WORK</span><h3>Listen → Build → Learn</h3><p>We look for real user needs, study the problem, build practical solutions, and refine our approach based on feedback. This cycle helps us improve continuously and stay focused on what matters.</p></article>
-<article class="card reveal"><div class="icon">◉</div><span class="num">GLOBAL MINDSET</span><h3>Built from Bangladesh, thinking globally</h3><p>CybroTechnology is based in Dhaka, Bangladesh, with a distributed team. We combine local insights with global perspectives to build products that work for users anywhere.</p></article>
+<article class="card reveal"><div class="icon">◎</div><span class="num">WHO WE ARE</span><h3>Technology with purpose</h3><p>We design and develop mobile applications, websites and digital tools.[...]
+<article class="card reveal"><div class="icon">⌘</div><span class="num">HOW WE WORK</span><h3>Listen → Build → Learn</h3><p>We look for real user needs, study the problem, build practical so[...]
+<article class="card reveal"><div class="icon">◉</div><span class="num">GLOBAL MINDSET</span><h3>Built from Bangladesh, thinking globally</h3><p>CybroTechnology is based in Dhaka, Bangladesh, wi[...]
 </div>
 <div class="about" style="margin-top:22px">
-<div class="card reveal"><span class="num">OUR FOCUS</span><h3>Products people can actually use.</h3><p>Our goal is not to create technology simply because technology is possible. We want every product we build to be genuinely useful, well-designed, and focused on solving real problems.</p></div>
-<div class="card reveal"><span class="num">LONG-TERM VISION</span><h3>From a young team to a trusted technology brand.</h3><p>CybroTechnology is still early in its journey. We are deliberately building a sustainable, values-driven technology company that creates products people love and trust.</p></div>
+<div class="card reveal"><span class="num">OUR FOCUS</span><h3>Products people can actually use.</h3><p>Our goal is not to create technology simply because technology is possible. We want every pr[...]
+<div class="card reveal"><span class="num">LONG-TERM VISION</span><h3>From a young team to a trusted technology brand.</h3><p>CybroTechnology is still early in its journey. We are deliberately bui[...]
 </div>
 </div></section>
 
-<section id="work"><div class="container"><div class="sectionHead reveal"><span class="kicker">What we do</span><h2>From a problem to a product.</h2><p>Our products are designed around usefulness, user experience and long-term value. Here's what we currently focus on.</p></div>
+<section id="work"><div class="container"><div class="sectionHead reveal"><span class="kicker">What we do</span><h2>From a problem to a product.</h2><p>Our products are designed around usefulness,[...]
 <div class="cards">
-<article class="card reveal"><div class="icon">◈</div><span class="num">01 / MOBILE</span><h3>App Development</h3><p>Useful mobile applications designed to solve focused problems and deliver a seamless user experience across iOS and Android platforms.</p></article>
-<article class="card reveal"><div class="icon">⌁</div><span class="num">02 / WEB</span><h3>Web Experiences</h3><p>Modern websites and web tools that combine performance, usability, discoverability and beautiful design to create meaningful digital experiences.</p></article>
-<article class="card reveal"><div class="icon">✦</div><span class="num">03 / TOOLS</span><h3>Digital Tools</h3><p>Practical utilities that reduce friction and help people complete everyday digital tasks more efficiently and enjoyably.</p></article>
+<article class="card reveal"><div class="icon">◈</div><span class="num">01 / MOBILE</span><h3>App Development</h3><p>Useful mobile applications designed to solve focused problems and deliver a c[...]
+<article class="card reveal"><div class="icon">⌁</div><span class="num">02 / WEB</span><h3>Web Experiences</h3><p>Modern websites and web tools that combine performance, usability, discoverabili[...]
+<article class="card reveal"><div class="icon">✦</div><span class="num">03 / TOOLS</span><h3>Digital Tools</h3><p>Practical utilities that reduce friction and help people complete everyday digit[...]
 </div></div></section>
 
-<section id="journey"><div class="container"><div class="sectionHead reveal"><span class="kicker">Our journey</span><h2>A young company with a long-term vision.</h2><p>Our story is about learning through doing, staying focused on our core values, and continuously improving how we build products.</p></div>
+<section id="journey"><div class="container"><div class="sectionHead reveal"><span class="kicker">Our journey</span><h2>A young company with a long-term vision.</h2><p>Our story is about learning[...]
 <div class="timeline">
-<div class="event reveal"><small>BEGINNING</small><h3>The idea</h3><p>CybroTechnology began with a simple ambition: use technology to build useful things instead of building for technology's sake. We started with a clear focus on solving real problems.</p></div>
-<div class="event reveal"><small>BUILD</small><h3>Products start taking shape</h3><p>We began developing applications, websites and tools around practical needs and real-world use cases. Our early products were built based on direct user feedback and market research.</p></div>
-<div class="event reveal"><small>LISTEN</small><h3>Feedback becomes part of the process</h3><p>People's feedback helps us identify friction, rethink features and search for better solutions. We've learned that listening is as important as building.</p></div>
-<div class="event reveal"><small>NEXT</small><h3>From local experiments to global ambition</h3><p>We are building a foundation for products that can serve users anywhere while keeping the experience personal, useful, and thoughtfully designed.</p></div>
+<div class="event reveal"><small>BEGINNING</small><h3>The idea</h3><p>CybroTechnology began with a simple ambition: use technology to build useful things instead of building for technology's sake[...]
+<div class="event reveal"><small>BUILD</small><h3>Products start taking shape</h3><p>We began developing applications, websites and tools around practical needs and real-world use cases.</p></div[...]
+<div class="event reveal"><small>LISTEN</small><h3>Feedback becomes part of the process</h3><p>People's feedback helps us identify friction, rethink features and search for better solutions.</p><[...]
+<div class="event reveal"><small>NEXT</small><h3>From local experiments to global ambition</h3><p>We are building a foundation for products that can serve users anywhere while keeping the experie[...]
 </div></div></section>
 
-<section id="vision"><div class="container"><div class="cta reveal"><span class="kicker" style="color:#d9ebff">THE FUTURE</span><h2>Technology should make life a little easier.</h2><p>We want CybroTechnology to become a trusted brand known for building products that actually solve problems and genuinely improve people's lives. We're committed to growing thoughtfully, maintaining our values, and never compromising on quality or user experience.</p></div></section>
+<section id="vision"><div class="container"><div class="cta reveal"><span class="kicker" style="color:#d9ebff">THE FUTURE</span><h2>Technology should make life a little easier.</h2><p>We want Cyb[...]
 
 <section id="support"><div class="container"><div class="sectionHead reveal">
 <span class="kicker">Customer support</span><h2>Need help? We are here for you.</h2>
 <p>For product questions, technical support, feedback or other user concerns, contact the CybroTechnology support team by email. We aim to respond to support requests within 24 hours.</p>
 </div>
 <div class="cards">
-<a class="card reveal" href="mailto:cybrotechnology1@gmail.com"><span class="num">SUPPORT EMAIL</span><h3>cybrotechnology1@gmail.com</h3><p>Send your support request and include the product name, what you're trying to do and any error messages you've encountered.</p></a>
-<a class="card reveal" href="https://t.me/cybrotechnology/1" target="_blank" rel="noopener"><span class="num">TELEGRAM</span><h3>CybroTechnology</h3><p>Visit our Telegram presence for company updates, product announcements and community discussions.</p></a>
-<a class="card reveal" href="https://maps.app.goo.gl/s1XdxcAHYJgHZwfcA" target="_blank" rel="noopener"><span class="num">MAPS PROFILE</span><h3>Find CybroTechnology</h3><p>Open our Google Maps profile to see our location, business hours, contact information and community reviews.</p></a>
+<a class="card reveal" href="mailto:cybrotechnology1@gmail.com"><span class="num">SUPPORT EMAIL</span><h3>cybrotechnology1@gmail.com</h3><p>Send your support request and include the product name,[...]
+<a class="card reveal" href="https://t.me/cybrotechnology/1" target="_blank" rel="noopener"><span class="num">TELEGRAM</span><h3>CybroTechnology</h3><p>Visit our Telegram presence for company upd[...]
+<a class="card reveal" href="https://maps.app.goo.gl/s1XdxcAHYJgHZwfcA" target="_blank" rel="noopener"><span class="num">MAPS PROFILE</span><h3>Find CybroTechnology</h3><p>Open our Google Maps pr[...]
 </div></div></section>
 
-<section id="contact"><div class="container"><div class="sectionHead reveal"><span class="kicker">Official presence</span><h2>Explore our digital world.</h2><p>Visit our current platforms and follow our journey across different digital spaces.</p></div></div></section>
+<section id="contact"><div class="container"><div class="sectionHead reveal"><span class="kicker">Official presence</span><h2>Explore our digital world.</h2><p>Visit our current platforms and fol[...]
 </main>
 
-<footer><div class="container foot"><div class="brand"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizWnAXLc5uy7QBB1PNLWPev3myfV7pO7f1HrvJSRjWx_YvkjloNMLhF5UKSabrBc9RGX76q3Y9BKqZMWiCTdj9yr7lqKInPJAbLlcjP1nKyj412G1Fo60JXmW_UoqkI078NibsHgApLKv0Qb3NiYSirxcGB3PQeDZ9jhs-YZshwp2oKLBHRlPsC-8xp8w/w945-h600-p-k-no-nu/companylogo.png" alt="CybroTechnology Logo" style="height: 40px; width: auto;"><span>CybroTechnology</span></div><p>© <span id="year"></span> CybroTechnology · Support: <a href="mailto:cybrotechnology1@gmail.com">cybrotechnology1@gmail.com</a></p></div></footer>
-
+<footer><div class="container foot"><div class="brand"><span class="logo">C</span><span>CybroTechnology</span></div><p>© <span id="year"></span> CybroTechnology · Support: <a href="mailto:cybro[...]
 <script>
 const body=document.body,theme=document.getElementById('theme');
 const saved=localStorage.getItem('cybro-theme'); if(saved==='dark') body.classList.add('dark');
@@ -143,7 +129,7 @@ theme.onclick=()=>{body.classList.toggle('dark');localStorage.setItem('cybro-the
 document.getElementById('year').textContent=new Date().getFullYear();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
-document.querySelectorAll('.card').forEach(card=>{card.addEventListener('pointermove',e=>{if(innerWidth<850)return;const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.setProperty('--x',x);card.style.setProperty('--y',y)});card.addEventListener('pointerleave',()=>{card.style.setProperty('--x',0);card.style.setProperty('--y',0)})});
-document.getElementById('menu').onclick=()=>{const n=document.querySelector('.links');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='76px';n.style.left='0';n.style.right='0';n.style.flexDirection='column';n.style.gap='0';n.style.padding='20px 16px';n.style.background='rgba(247,249,252,.95)';n.style.backdropFilter='blur(18px)';n.style.borderBottom='1px solid var(--line)'};
+document.querySelectorAll('.card').forEach(card=>{card.addEventListener('pointermove',e=>{if(innerWidth<850)return;const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.client[...]
+document.getElementById('menu').onclick=()=>{const n=document.querySelector('.links');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='76px';n.style[...]
 </script>
 </body></html>
